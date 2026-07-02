@@ -72,8 +72,7 @@ export default function SignupPage() {
   }
 
   const inputClass =
-    'w-full rounded-xl border border-slate-300 px-4 py-3 outline-none transition focus:border-emerald-500 focus:ring-4 focus:ring-emerald-100';
-
+  'w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-900 placeholder:text-slate-400 outline-none transition focus:border-emerald-500 focus:ring-4 focus:ring-emerald-100';
   return (
     <main className="flex min-h-screen items-center justify-center bg-gradient-to-br from-emerald-50 via-white to-cyan-50 px-4 py-10">
       <section className="w-full max-w-2xl rounded-3xl border border-slate-200 bg-white p-7 shadow-2xl sm:p-12">
