@@ -1,4 +1,4 @@
-﻿services:
+services:
   - type: web
     name: jannat-dental-clinic-api-affan-2026
     runtime: node
@@ -20,4 +20,4 @@
       - key: NODE_ENV
         value: production
       - key: FRONTEND_URL
-        value: http://localhost:3000
+        value: https://jannat-dental-clinic-affan.netlify.app
