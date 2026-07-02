@@ -1,0 +1,23 @@
+﻿services:
+  - type: web
+    name: jannat-dental-clinic-api-affan-2026
+    runtime: node
+    plan: free
+    region: singapore
+    branch: main
+    rootDir: apps/api
+    buildCommand: npm ci --include=dev && npx prisma migrate deploy && npm run build
+    startCommand: npm run start:prod
+    healthCheckPath: /api
+    autoDeployTrigger: commit
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: JWT_ACCESS_SECRET
+        generateValue: true
+      - key: JWT_RESET_SECRET
+        generateValue: true
+      - key: NODE_ENV
+        value: production
+      - key: FRONTEND_URL
+        value: http://localhost:3000
