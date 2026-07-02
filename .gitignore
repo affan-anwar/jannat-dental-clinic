@@ -1,0 +1,45 @@
+﻿# Dependencies
+node_modules/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Next.js
+.next/
+out/
+
+# NestJS builds
+dist/
+coverage/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Prisma generated client
+apps/api/src/generated/
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Backup folders
+backup-*/
+*-backup-*
+*.zip
+/curl
+/src/
+apps/api/nest
+apps/web/taskkill
+apps/web/AGENTS.md
+apps/web/CLAUDE.md
+apps/api/prisma/schema-before-*.prisma
+apps/api/prisma/schema.before-*.prisma
+apps/api/prisma/schema-*backup*.prisma
+apps/api/prisma/schema.invalid-backup.prisma
